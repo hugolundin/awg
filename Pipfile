@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 coloredlogs = '*'
 colorama = '*'
-
+adafruit-ampy = '*'
 
 [dev-packages]
 
