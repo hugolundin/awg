@@ -1,11 +1,12 @@
 import os
-import tempfile
 import argparse
 import logging
 import coloredlogs
 
+from app import ArbitraryWaveGenerator
+
 RPI_PICO = '/dev/tty.usbmodem14601'
-FIRMWARE_PATH = 'awg/firmware.py'
+FIRMWARE_PATH = 'awg/firmware/firmware.py'
 
 def setup():
     logging.info(f'Copying firmware to Raspberry Pi Pico ({RPI_PICO})...')
@@ -13,6 +14,8 @@ def setup():
 
 def main():
     logging.debug('Starting awg...')
+    awg = ArbitraryWaveGenerator()
+    awg.run()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

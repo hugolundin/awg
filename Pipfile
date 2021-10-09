@@ -1,7 +1,7 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = 'https://pypi.python.org/simple'
 verify_ssl = true
-name = "pypi"
+name = 'pypi'
 
 [packages]
 coloredlogs = '*'
@@ -11,4 +11,5 @@ adafruit-ampy = '*'
 [dev-packages]
 
 [scripts]
-setup = "python3 awg/main.py --setup"
+awg = 'pipenv run python3 awg/main.py'
+setup = 'pipenv run python3 awg/main.py --setup'
