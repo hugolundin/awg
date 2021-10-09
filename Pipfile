@@ -7,6 +7,8 @@ name = 'pypi'
 coloredlogs = '*'
 colorama = '*'
 adafruit-ampy = '*'
+matplotlib = '*'
+numpy = '*'
 
 [dev-packages]
 
